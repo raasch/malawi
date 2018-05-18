@@ -5,8 +5,11 @@ classdef sequence
     end
     methods (Access=public)
         function obj=sequence(varargin) % constructor
-            if nargin==0
-                obj.elements=sparse(0,0);
+            switch(nargin)
+                case 0
+                    obj.elements=sparse(0,1);
+                case 1
+                    obj.elements=sparse(varargin{1})
             end
         end
     end
