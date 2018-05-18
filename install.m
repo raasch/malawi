@@ -19,4 +19,5 @@
 % add some subdirectories to the Matlab search path
 mfilepath=fileparts(which(mfilename));
 addpath(fullfile(mfilepath,'classes'))
+addpath(fullfile(mfilepath,'unit_tests'))
 clear mfilepath;
