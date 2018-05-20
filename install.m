@@ -20,4 +20,5 @@
 mfilepath=fileparts(which(mfilename));
 addpath(fullfile(mfilepath,'classes'))
 addpath(fullfile(mfilepath,'unit_tests'))
+addpath(fullfile(mfilepath,'utils'))
 clear mfilepath;
